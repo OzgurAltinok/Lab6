@@ -20,7 +20,7 @@ namespace lab6uyg2
 
         public virtual int indirimHesapla(int fiyat)
         {
-            return 0;
+            return fiyat * IndirimOrani / 100;
         }
 
         public static OzelMusteri operator --(Musteri musteri)

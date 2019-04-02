@@ -17,24 +17,28 @@ namespace lab6uyg2
             ozM.Soyad = "veli";
             ozM.ToplamAlisVerisFiyati = 3030;
             musteris.Add(ozM);
+            ozM.indirimHesapla(5);
 
             OzelMusteri ozM1 = new OzelMusteri();
             ozM1.Ad = "ayse";
             ozM1.Soyad = "fatma";
             ozM1.ToplamAlisVerisFiyati = 7600;
             musteris.Add(ozM1);
+            ozM1.indirimHesapla(10);
 
             OzelMusteri ozM2 = new OzelMusteri();
             ozM2.Ad = "zehra";
             ozM2.Soyad = "mehra";
             ozM2.ToplamAlisVerisFiyati = 5002;
             musteris.Add(ozM2);
+            ozM2.indirimHesapla(15);
 
             Musteri ozM3 = new Musteri();
             ozM3.Ad = "hayriye";
             ozM3.Soyad = "huriye";
             ozM3.ToplamAlisVerisFiyati = 5500;
             musteris.Add(ozM3);
+            ozM3.indirimHesapla(20);
 
             for (int i = 0; i < musteris.Count; i++)
             {
@@ -46,7 +50,7 @@ namespace lab6uyg2
 
             foreach (var element in musteris)
             {
-                Console.WriteLine(element.GetType().Name);
+                Console.WriteLine(element.GetType().Name + " " + element.IndirimOrani);
             }
 
             Console.ReadKey();
